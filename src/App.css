@@ -1,0 +1,146 @@
+.current-weather {
+  margin: 20px 0;
+  padding: 20px;
+  background: linear-gradient(135deg, #74b9ff, #0984e3);
+  border-radius: 15px;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.current-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.weather-emoji {
+  font-size: 4rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.weather-info .temperature {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.weather-info .condition {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 5px 0;
+  text-transform: capitalize;
+}
+
+.weather-info .description {
+  font-size: 1rem;
+  margin: 0;
+  opacity: 0.9;
+  text-transform: capitalize;
+}
+
+.forecast-section {
+  margin-top: 30px;
+}
+
+.forecast-cards {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.forecast-card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  min-width: 120px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.forecast-card:hover {
+  transform: translateY(-5px);
+}
+
+.forecast-card .date {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.forecast-card .weather-emoji {
+  font-size: 2.5rem;
+  display: block;
+  margin: 10px 0;
+}
+
+.forecast-card .temp {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0984e3;
+  margin: 5px 0;
+}
+
+.forecast-card .condition {
+  font-weight: 600;
+  color: #333;
+  margin: 5px 0;
+  text-transform: capitalize;
+}
+
+.forecast-card .description {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.search {
+  margin: 20px 0;
+}
+
+.search input {
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 25px;
+  margin-right: 10px;
+  min-width: 250px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.search input:focus {
+  border-color: #74b9ff;
+}
+
+.search button {
+  padding: 12px 25px;
+  font-size: 1rem;
+  background: linear-gradient(135deg, #74b9ff, #0984e3);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.search button:hover {
+  transform: translateY(-2px);
+}
+
+.error {
+  color: #d63031;
+  background: #fab1a0;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
